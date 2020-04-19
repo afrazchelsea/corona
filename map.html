@@ -11,6 +11,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/map.css" />
     <link
       rel="stylesheet"
@@ -41,7 +45,21 @@
         </nav>
       </div>
     </header>
+    <div id="map" class="map-container"></div>
   </body>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+
+  <script>
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoiYnRlamFzIiwiYSI6ImNrOHZ5MXYzeTA1bGszZW42NjM5cmc5NmsifQ.MNPxGURAp0JIHFlDQWHfdg";
+    var map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/mapbox/dark-v10",
+      zoom: 3,
+      center: [78, 20],
+    });
+  </script>
 
   <script src="map.js"></script>
 </html>

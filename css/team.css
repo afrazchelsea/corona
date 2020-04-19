@@ -1,0 +1,74 @@
+#team_name {
+  text-align: center;
+  width: 80%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  background-color: hsl(322, 100%, 66%);
+  color: rgb(255, 255, 255);
+  font-size: 300%;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.infoBox {
+  background-color: rgb(188, 223, 235);
+  color: rgb(0, 0, 0);
+  width: 400px;
+  padding: 10px;
+  border-radius: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.neerajImg img,
+.git img,
+.link img {
+  border-radius: 50%;
+}
+.neerajImg img {
+  width: 100px;
+  height: auto;
+}
+.idBoxFlex,
+.iconFlex {
+  display: flex;
+}
+.iconFlex {
+  align-items: center;
+}
+.git img {
+  width: 40px;
+  height: auto;
+  margin-right: 5px;
+}
+.link img {
+  width: 40px;
+  height: auto;
+  margin-left: 5px;
+  background-color: white;
+  border: 1.7px solid white;
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+.three {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+.four {
+  grid-column: 2/4;
+  grid-row: 2;
+}
+
+.infoBox h1 {
+  text-align: center;
+}

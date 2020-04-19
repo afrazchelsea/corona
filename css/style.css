@@ -85,12 +85,17 @@ nav {
 .box {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
-  margin: 40px 0;
+  margin: 40px 0px;
   padding: 60px;
   background-color: white;
 }
 
 .box img {
+  width: 80%;
+}
+
+.double {
+  margin-left: 60px;
   width: 80%;
 }
 

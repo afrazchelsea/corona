@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: hsl(192, 100%, 9%);
+}
+
+.title {
+  font-family: "Open Sans" sans-serif;
+  font-size: 35px !important;
+}
+
+.est span span {
+  font-size: 24px !important;
+}
+
+/* div .scroll {
+  margin: 110px;
+  margin-left: 50px;
+  padding-left: 200px;
+  background-color: green;
+  width: 500px;
+  height: 400px;
+  overflow-x: hidden;
+  text-align: justify;
+} */
+
+div .scroll {
+  margin: 110px;
+  margin-left: 50px;
+  padding-left: 200px;
+  background-color: green;
+  width: 500px;
+  height: 500px;
+  overflow-x: hidden;
+  text-align: justify;
+}
+
+.menu-icon {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  background: url(icons.png);
+  background-size: cover;
+  border-radius: 5rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: 2;
+  box-shadow: 0px 0.5px 50px rgba(2, 2, 2, 0.05);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e08207;
+  border-radius: 10px;
+}
+
+/* Handle on hover */ /* when we keep mouse on state name color changes*/
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a7f3;
+}
+/* case details data */
+.small {
+  margin-left: 50px;
+  background-color: #d0d6f0;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+.est {
+  font-size: 18px;
+}
+.tablecontent {
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #44a6c6; /* maharashtra and other states color*/
+}
+
+.tablecontent:hover {
+  background-color: #efeef1;
+}
+
+#myChart {
+  background-color: #cfd7f0;
+  padding: 20px;
+  color: green;
+  cursor: crosshair;
+}
+
+/* Responseive queries */
+@media (max-width: 990px) {
+  canvas {
+    margin-top: 60px;
+  }
+}
