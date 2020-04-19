@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-   
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <!-- displays site properly based on user's device -->
 
@@ -29,10 +32,10 @@
     </title>
   </head>
   <body>
-       <button
-        class="button menu-icon"
-        onclick="location.href='https://coronaearth.netlify.app/'"></button>
-      </button>
+    <button
+      class="button menu-icon"
+      onclick="location.href='https://coronaearth.netlify.app/'"
+    ></button>
 
     <header>
       <div class="container">
@@ -66,11 +69,11 @@
           align-items: center;
         "
       >
-        <div id="boxes" style="display:flex"></div>
+        <div id="boxes" style="display: flex;"></div>
 
-        <div class="scroll statewise"
-          
-          style="text-align: center; background-color:rgb(188,223,235) ;"
+        <div
+          class="scroll statewise"
+          style="text-align: center; background-color: rgb(188, 223, 235);"
         >
           <table>
             <thead>
@@ -106,7 +109,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: rgb(188,223,235);
+          background-color: rgb(188, 223, 235);
           border-width: 40pt;
           height: 700px;
         "
@@ -114,15 +117,10 @@
         <canvas id="doughnut-chart" width="400" height="350"></canvas>
       </div>
     </div>
-
-
-
   </body>
-   
-
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-  <script src="/stats.js" > </script>
-  <script src="/chart.js"> </script>
+  <script src="/stats.js"></script>
+  <script src="/chart.js"></script>
   <script src="map.js"></script>
 </html>

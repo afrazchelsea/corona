@@ -44,9 +44,9 @@ div .scroll {
   position: fixed;
   right: 20px;
   top: 100px;
-  background: url(icons.png);
+  background: url(/images/xyz.jpeg);
   background-size: cover;
-  border-radius: 5rem;
+  border-radius: 50%;
   width: 5rem;
   height: 5rem;
   z-index: 2;
