@@ -72,3 +72,14 @@
 .infoBox h1 {
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoBox {
+    margin-top: 20px;
+  }
+}

@@ -164,3 +164,49 @@ footer p {
 .info {
   margin-right: 150px;
 }
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  nav.flex ul {
+    text-align: center;
+    /* flex-direction: row; */
+  }
+
+  nav.flex li {
+    margin-left: 10px;
+    /* flex-direction: row; */
+  }
+
+  footer ul {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  .header-img {
+    margin-top: 30px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .double {
+    margin-left: 0;
+  }
+
+  .box p {
+    text-align: justify;
+  }
+
+  .box ul {
+    text-align: left;
+  }
+}
