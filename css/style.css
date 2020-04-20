@@ -130,7 +130,6 @@ footer ul li {
 
 .align-start {
   align-items: flex-start;
-  margin-right: 50px;
 }
 
 .align-start a {
@@ -153,17 +152,18 @@ footer .circle {
 }
 
 footer p {
-  text-align: right;
+  text-align: left;
+  width: 300px;
 }
 
 .header {
   font-size: 40px;
   font-family: "Poppins", sans-serif;
 }
-
-.info {
-  margin-right: 150px;
+.names {
+  margin-left: 125px;
 }
+
 @media screen and (max-width: 768px) {
   body {
     text-align: center;
@@ -172,9 +172,14 @@ footer p {
     flex-direction: column;
   }
 
+  nav.flex {
+    /* text-align: center; */
+    margin-left: 0;
+    flex-direction: column;
+  }
+
   nav.flex ul {
     text-align: center;
-    /* flex-direction: row; */
   }
 
   nav.flex li {
@@ -185,9 +190,8 @@ footer p {
   footer ul {
     padding: 0;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
-
   footer p {
     text-align: center;
   }
@@ -208,5 +212,14 @@ footer p {
 
   .box ul {
     text-align: left;
+  }
+
+  footer p {
+    margin-left: 75px;
+    text-align: center;
+  }
+
+  .names {
+    margin-left: 0;
   }
 }
