@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-
     <!-- displays site properly based on user's device -->
 
     <link
@@ -19,8 +12,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="/css/stats.css" />
-
+    <link rel="stylesheet" href="css/stats.css" />
     <link rel="stylesheet" href="css/map.css" />
     <link
       rel="stylesheet"
@@ -32,11 +24,6 @@
     </title>
   </head>
   <body>
-    <button
-      class="button menu-icon"
-      onclick="location.href='https://coronaearth.netlify.app/'"
-    ></button>
-
     <header>
       <div class="container">
         <nav class="flex" id="nav-bar">
@@ -54,27 +41,16 @@
             </ul>
           </div>
         </nav>
+        <button
+          class="button menu-icon"
+          onclick="location.href='https://coronaearth.netlify.app/'"
+        ></button>
       </div>
     </header>
-
-    <!-- Main Content -->
-
-    <div class="row">
-      <div
-        class="col-md-2 total"
-        style="
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        "
-      >
+    <div class="content">
+      <div class="stats">
         <div id="boxes" style="display: flex;"></div>
-
-        <div
-          class="scroll statewise"
-          style="text-align: center; background-color: rgb(188, 223, 235);"
-        >
+        <div class="statewise">
           <table>
             <thead>
               <tr>
@@ -95,26 +71,11 @@
           </table>
         </div>
       </div>
-
-      <!-- Line chart for no. of cases -->
-      <div class="col-md-5" style="overflow-y: hidden;">
-        <canvas id="myChart" width="600" height="450"></canvas>
+      <div class="line">
+        <canvas id="myChart" width="600" height="500"></canvas>
       </div>
-
-      <!--Doughnut chart for statewise result  -->
-      <div
-        class="col-md-5"
-        style="
-          overflow-y: hidden;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: rgb(188, 223, 235);
-          border-width: 40pt;
-          height: 700px;
-        "
-      >
-        <canvas id="doughnut-chart" width="400" height="350"></canvas>
+      <div class="chart">
+        <canvas id="doughnut-chart" width="600" height="500"></canvas>
       </div>
     </div>
   </body>

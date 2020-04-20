@@ -69,8 +69,7 @@ var myChart = new Chart(ctx, {
       "Apr 13",
       "Apr 14",
       "Apr 15",
-      "Apr 16"
-
+      "Apr 16",
     ],
     datasets: [
       {
@@ -137,24 +136,22 @@ var myChart = new Chart(ctx, {
           2810,
           2920,
           3200,
-          3400
-
-
+          3400,
         ],
-        backgroundColor: ["rgba(60, 161, 195, 0.4)"],
+        backgroundColor: ["rgba(255, 99, 132, 0.7)"],
         fill: true,
         borderColor: ["rgba(255, 99, 132, 1)"],
-        borderWidth: 4
-      }
-    ]
+        borderWidth: 4,
+      },
+    ],
   },
-  options: {}
+  options: {},
 });
 
 // Doughnut chart
 fetch("https://api.covid19india.org/data.json")
-  .then(res => res.json())
-  .then(data => {
+  .then((res) => res.json())
+  .then((data) => {
     let others =
       data.statewise[0].confirmed -
       data.statewise[1].confirmed -
@@ -170,7 +167,7 @@ fetch("https://api.covid19india.org/data.json")
           data.statewise[2].state,
           data.statewise[3].state,
           data.statewise[4].state,
-          "Others"
+          "Others",
         ],
         datasets: [
           {
@@ -180,28 +177,27 @@ fetch("https://api.covid19india.org/data.json")
               "#8e5ea2",
               "#3cba9f",
               "#e8c3b9",
-              "#c45850"
+              "#c45850",
             ],
             data: [
               data.statewise[1].confirmed,
               data.statewise[2].confirmed,
               data.statewise[3].confirmed,
               data.statewise[4].confirmed,
-              others
-            ]
-          }
-        ]
+              others,
+            ],
+          },
+        ],
       },
       options: {
         title: {
           display: true,
-          text: "Statewise confirmed cases"
+          text: "Statewise confirmed cases",
         },
         legend: {
           position: "bottom",
-          top: 10
-        }
-      }
+          top: 10,
+        },
+      },
     });
   });
-
